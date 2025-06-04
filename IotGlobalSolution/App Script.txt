@@ -1,0 +1,15 @@
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  var dados = JSON.parse(e.postData.contents);
+  var dataHora = new Date();
+
+  var umidadeSolo = dados.umidade_solo;
+  var umidadeAr = dados.umidade_ar;
+  var chuva = dados.chuva;
+  var aviso = dados.aviso;
+
+  sheet.appendRow([dataHora, umidadeSolo, umidadeAr, chuva, aviso]);
+
+  return ContentService.createTextOutput("Dados recebidos com sucesso");
+}
