@@ -2,7 +2,7 @@
 
 * COMO RODAR O PROJETO
 
-
+1 Arduino Ide
   
 * -Abra o arquivo 'geoalertaiot.ino'
 
@@ -16,5 +16,6 @@
 ![Captura de tela 2025-05-16 112715](https://github.com/user-attachments/assets/8c77f2e6-ffca-4de3-8351-500b86670fe8)
 
 
+2 App Script
 
-
+*
